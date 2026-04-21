@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authentic Cafe Menu</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f6f3;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.page {
+  min-width: 100vw;
+  padding: 40px;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+}
+
+h1 {
+  text-align: center;
+  color: #8b5e3c;
+  letter-spacing: 2px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.menu-list {
+  width: 50%;
+}
+
+.menu-list h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.images {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.swipe-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HOME -->
+  <div class="page" style="display:flex;align-items:center;justify-content:center;flex-direction:column;">
+    <h1>AUTHENTIC CAFÉ</h1>
+    <p>Coffee + Non Coffee + Snack</p>
+    <p class="swipe-text">➡ Swipe untuk lihat menu</p>
+  </div>
+
+  <!-- COFFEE -->
+  <div class="page">
+    <h1>COFFEE MENU</h1>
+    <div class="menu">
+      <div class="menu-list">
+        <h2>Our Selection</h2>
+        <div class="item"><span>Cappucino</span><span>28K</span></div>
+        <div class="item"><span>Mocachino</span><span>28K</span></div>
+        <div class="item"><span>Caramel Latte</span><span>28K</span></div>
+        <div class="item"><span>Hazelnut Latte</span><span>28K</span></div>
+        <div class="item"><span>Vanila Latte</span><span>28K</span></div>
+        <div class="item"><span>Affogato</span><span>28K</span></div>
+      </div>
+    </div>
+    <p class="swipe-text">➡ Swipe untuk lanjut</p>
+  </div>
+
+  <!-- COFFEE 2 -->
+  <div class="page">
+    <h1>COFFEE MENU</h1>
+    <div class="menu">
+      <div class="menu-list">
+        <div class="item"><span>Cafe Latte</span><span>25K</span></div>
+        <div class="item"><span>Aren Latte</span><span>25K</span></div>
+        <div class="item"><span>Espresso</span><span>23K</span></div>
+        <div class="item"><span>Americano</span><span>18K</span></div>
+        <div class="item"><span>Tubruk</span><span>18K</span></div>
+        <div class="item"><span>Ekstra Shot</span><span>10K</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NON COFFEE -->
+  <div class="page">
+    <h1>NON COFFEE</h1>
+    <div class="menu">
+      <div class="menu-list">
+        <div class="item"><span>Choco Mint</span><span>28K</span></div>
+        <div class="item"><span>Velvet Latte</span><span>28K</span></div>
+        <div class="item"><span>Green Latte</span><span>28K</span></div>
+        <div class="item"><span>Taro</span><span>25K</span></div>
+        <div class="item"><span>Choco Latte</span><span>25K</span></div>
+        <div class="item"><span>Thai Tea</span><span>25K</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REFRESHMENT -->
+  <div class="page">
+    <h1>REFRESHMENT</h1>
+    <div class="menu">
+      <div class="menu-list">
+        <div class="item"><span>Virgin Mojito</span><span>23K</span></div>
+        <div class="item"><span>Tropical Rush</span><span>20K</span></div>
+        <div class="item"><span>Citrus Light</span><span>20K</span></div>
+        <div class="item"><span>Mega Mendung</span><span>20K</span></div>
+        <div class="item"><span>Yako Pop Series</span><span>20K</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
